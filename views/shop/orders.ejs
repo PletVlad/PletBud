@@ -1,0 +1,28 @@
+<%- include('../includes/header.ejs') %>
+<link rel="stylesheet" href="/css/order.css" />
+</head>
+
+<body>
+ <%- include('../includes/navigation.ejs') %>
+ <main>
+  <% if (orders.length <= 0) { %>
+   <h1>Замовлення відсутні!</h1>
+  <% } else { %>
+   <ul>
+    <% orders.forEach(order => { %>
+     <li>
+      <h1>Замовлення # <%= order.id %></h1>
+      <ul class="order__item-list">
+       <% order.products.forEach(product => { %>
+        <li class="order__item">
+         <h1><%= product.title %></h1>
+         <h2>Кількість: <%= product.orderItem.quantity %></h2>
+        </li>
+       <% }); %>
+      </ul>
+     </li>
+    <% }); %>
+   </ul>
+  <% } %>
+ </main>
+ <%- include('../includes/footer.ejs') %>

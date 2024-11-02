@@ -1,0 +1,52 @@
+<div class="backdrop"></div>
+<header class="main-header">
+  <button class="btn" id="side-menu-toggle">Меню</button>
+  <nav class="main-header__nav">
+    <h1>PletBud</h1>
+    <ul class="main-header__item-list">
+      <li class="main-header__item">
+        <a class="<%= path === '/' ? 'active' : '' %>" href="/">Головна</a>
+      </li>
+      <li class="main-header__item">
+        <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Каталог</a>
+      </li>
+      <li class="main-header__item">
+        <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Кошик</a>
+      </li>
+      <li class="main-header__item">
+        <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Замовлення</a>
+      </li>
+      <li class="main-header__item">
+        <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Додати товар</a>
+      </li>
+      <li class="main-header__item">
+        <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Адмін-панель</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<nav class="mobile-nav">
+  <ul class="mobile-nav__item-list">
+    <h1>PletBud</h1>
+    <li class="mobile-nav__item">
+      <a class="<%= path === '/' ? 'active' : '' %>" href="/">Головна</a>
+    </li>
+    <li class="mobile-nav__item">
+      <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Каталог</a>
+    </li>
+    <li class="mobile-nav__item">
+      <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Кошик</a>
+    </li>
+    <li class="mobile-nav__item">
+      <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Замовлення</a>
+    </li>
+    <li class="mobile-nav__item">
+      <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Додати товар
+      </a>
+    </li>
+    <li class="mobile-nav__item">
+      <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Адмін-панель
+      </a>
+    </li>
+  </ul>
+</nav>
